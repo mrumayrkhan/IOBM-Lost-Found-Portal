@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Report Lost</title>
+    <style>
+        :root { --accent: #ff0000; }
+        body { font-family: sans-serif; padding: 40px; background: #eee; }
+        .form-box { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 10px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; }
+        .btn-submit { background: var(--accent); color: white; border: none; width: 100%; padding: 12px; cursor: pointer; }
+        .back-link { display: block; margin-top: 15px; text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Report Lost Item</h2>
+        <form>
+            <label>Item Name</label>
+            <input type="text" placeholder="e.g. Wallet">
+            <label>Location Last Seen</label>
+            <input type="text" placeholder="e.g. CBM Lab">
+            <button type="submit" class="btn-submit">Submit Report</button>
+        </form>
+        <a href="student.html" class="back-link">Back to Dashboard</a>
+    </div>
+</body>
+</html>

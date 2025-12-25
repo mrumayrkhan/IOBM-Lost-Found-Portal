@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Found Item</title>
+    <style>
+        :root { --accent: #27ae60; } 
+        body { font-family: "Segoe UI", sans-serif; padding: 40px; background: #f0f2f5; }
+        .form-box { 
+            max-width: 500px; 
+            margin: auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 { color: var(--accent); text-align: center; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-top: 5px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+        }
+        .btn-submit { 
+            background: var(--accent); 
+            color: white; 
+            border: none; 
+            width: 100%; 
+            padding: 14px; 
+            margin-top: 20px; 
+            border-radius: 6px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+        .btn-submit:hover { background: #219150; }
+        .back-link { 
+            display: block; 
+            margin-top: 20px; 
+            text-align: center; 
+            color: #666; 
+            text-decoration: none; 
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Report Found Item</h2>
+        <p style="text-align: center; color: #555;">Please provide details of the item you found.</p>
+        
+        <form>
+            <label>Item Description</label>
+            <input type="text" placeholder="e.g. Keys, Glasses, Laptop Charger">
+
+            <label>Where did you find it?</label>
+            <input type="text" placeholder="e.g. Student Activity Center">
+
+            <label>Current Location of Item</label>
+            <input type="text" placeholder="e.g. Security Office / My Department">
+
+            <label>Additional Notes</label>
+            <textarea rows="3" placeholder="Any specific marks or details?"></textarea>
+
+            <button type="submit" class="btn-submit">Submit Found Report</button>
+        </form>
+
+        <a href="student.html" class="back-link">← Back to Student Portal</a>
+    </div>
+
+</body>
+</html>
